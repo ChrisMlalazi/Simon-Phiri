@@ -43,6 +43,7 @@ h1 {
     padding-top: 10px;
     margin-bottom: 20px;
     color: black;
+    text-shadow: 8px 5px 9px white;
 }
 
 
@@ -134,7 +135,7 @@ body {
   float: right;
   right: 5px;
   font-size: .7em; 
-  background-color: brown;
+  background-color: rgba(0,0,0,0.5);
   border-radius: 100px;
   padding: 30px;
 }
@@ -177,13 +178,9 @@ body {
 }
 
 .toggle-menu li {
-  width: 100%;
   display: block;
   margin-bottom: 10px;
-  padding-right: 30px;
   background-color: grey;
-  text-align: center;
-
 }
 
 .toggle-menu li:hover {
@@ -303,19 +300,39 @@ span {
 
 }
 
+#footer p,
+#footer a {
+  color: black;
+  font-weight: bold;
+  background-color: rgba(0,0,0,0.2);
+  padding: 5px;
+
+}
+
 /**************** 
 About Page 
 ******************/
+ 
+.topDiv2   {
+   margin-top: -310px;
+
+}
 .menu_square{
-  background:rgba(255,255,255, 1);
-  margin: 0 auto;
+  margin-top: -70px;
   
 }
+
+.set {
+  margin-top: 310px;
+}
+
 
 #field {
   display: flex;
   flex-direction: column;
   margin: 10px;
+   height: calc(100vh - 125px);
+
 }
 
 
@@ -335,26 +352,46 @@ About Page
   padding: 0;
 }
 
-.profile_image2 {
-    background-image:url("../images/Profile5.jpg");                  
-    background-repeat:  no-repeat;       
-   /* background-position: center; */ 
-    background-size: cover;
-    margin: 0 auto;
-    border: 10px solid #e0ffff;
+.art {
+  text-align: center;
+  margin-top: -180px;
+  color: brown;
+}
+
+.profile_image2{
+  text-align: center;
+  width: 300px;
+   height: 300px;
+   margin: 0 auto;
+}
+
+.profile_image2 img {
+   width: 200px;
+   height: 200px;
+    border: 1px solid white;
     width: 100%;
-    height: 300px;
     border-radius: 10%;
+    background-repeat:  no-repeat;       
+    background-position: center;  
+    background-size: cover;
 }
 
 .bio {
-  margin-top: 10px;
+  text-align: center;
+  margin-top: -100px;
  /* border: 2px solid #e0ffff;*/
   padding: 10px;
   border-radius: 10%;
   font-size: .9em;
   line-height: 1.4;
 
+}
+
+.bio p {
+  border: 1px solid white;
+  background-color: #faebd7;
+  border-radius: 10px;
+  padding: 20px;
 }
 
 .bio ul {
@@ -372,16 +409,21 @@ About Page
 /******************
 Light Gallery
 *******************/
+ .topDiv3 {
+   margin-top: -100px;
+ }
+
  .gallery_blurb {
   height: 50px;
-  margin-top: -80px;
+  margin-top: 200px;
   margin-bottom: 100px;
   font-size: .9em;
   font-weight: bold;
  }
 
+
 .sentence {
-  color: orange;;
+  color: purple;;
   text-align: center;
   position: relative;
   z-index: -1;
@@ -396,7 +438,7 @@ transform:skewY(1.5deg);
 }
 
 .lightbox img {
-  border: 2px white solid;
+  border: 1px white solid;
   border-radius: 5%;
 }
 
@@ -489,6 +531,20 @@ footer {
 Media Queries
 ************/
 
+@media screen and (max-width: 321px) {
+
+ .profile_image2 {
+    margin-top: 20px;
+  }
+
+}
+
+@media screen and (max-width: 500px) {
+  .container p {
+    display: none;
+  }
+}
+
 @media screen and (min-width: 500px) {
 
 
@@ -506,6 +562,10 @@ Media Queries
 
 
 }
+
+
+
+
 
 
 @media screen and (min-width: 737px) {
@@ -565,8 +625,19 @@ margin-top: ;
   font-weight: bold;
 }
 
+/********
+
+GALLERY
+********/
+
+.topDiv3 {
+   margin-top: -100px;
+ }
+
+
+
 .gallery_blurb {
-   margin-top: -120px;
+   margin-top: 200px;
 }
 
 .lightbox  {
@@ -594,27 +665,75 @@ margin-top: ;
 /****  About  ****/
 
 
-#field {
-    flex-direction: row;
-    max-width: 1100px;
-    margin: 0 auto;
+.topDiv2   {
+   margin-top: -110px;
+
+}
+.menu_square{
+  margin-top: -70px;
+  
 }
 
 .set {
-  margin-top: 30px;
+  margin-top: 210px;
+}
+
+.art {
+  margin-top: 0;
+  text-align: center;
+}
+
+.art p {
+  color: black;
 }
 
 .profile_image2 {
-   height: 380px;
-   margin: 20px; 
-   border-bottom-right-radius: 100%;
+  
+
+  
 }
 
 .bio {  
-   margin-top: 10px;
+  text-align: center; 
+   list-style: none; 
+   margin-top: 0; 
+   width: 50%;
+ }
+
+.bio p {
+  
+  margin: 0 auto;
+  margin-top: 0;
+  margin-right: 20px;
+  border: 1px solid white;
+  background-color: #faebd7;
+  border-radius: 10px;
+  padding: 20px;
+
+ }
+
+#field {
+  
+  height: calc(100vh - 125px);
+  max-width: 1100px;
+  
 }
 
-.top {
-  display: none;
+.aboutWrapper {
+  display: flex;
+  flex-direction: row;
+  margin-top: 50px;
+
+}
+
+.profile_image2 img{
+   height: 300px;
+   width: 300px;
+   margin-left: 40px;
+    
+   }
+
+footer {
+  margin-top: 50px;
 }
 
