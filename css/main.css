@@ -114,7 +114,7 @@ body {
 }
 
 .container {  
-    background-image: url("../images/MainProfile.jpg");
+    background-image: url("../images/mainProfile.jpg");
                      
     background-repeat:  no-repeat;   
     height: calc(100vh - 80px);
