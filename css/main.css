@@ -632,6 +632,8 @@ margin-top: ;
 GALLERY
 ********/
 
+
+
 .topDiv3 {
    margin-top: -100px;
  }
@@ -639,7 +641,13 @@ GALLERY
 
 
 .gallery_blurb {
-   margin-top: 200px;
+   margin-top: 100px;
+   text-align: center;
+}
+
+.sentence  {
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 .lightbox  {
