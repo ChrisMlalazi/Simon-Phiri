@@ -1,4 +1,4 @@
- /*****************
+/*****************
 BODY
 *****************/
 
@@ -11,7 +11,7 @@ body {
    padding: 0;
    font-family: "Open Sans", sans-serif; 
    max-width: 1200px;
-   background-color: white;
+   background-color: #c3b091;
    font-size: 1em;
 
 }
@@ -39,8 +39,9 @@ button {
 
 h1 {
     text-align: center;
+    font-size: 1.6em;
     margin-top: 0;
-    padding-top: 10px;
+    padding-top: 15px;
     margin-bottom: 20px;
     color: black;
     text-shadow: 8px 5px 9px white;
@@ -434,12 +435,13 @@ Light Gallery
 
 img:hover {
 transform:skewY(1.5deg);
-
 }
 
 .lightbox img {
-  border: 1px white solid;
+  border: 10px solid #a9a9a9;
   border-radius: 5%;
+  box-shadow: 8px 5px 9px black;
+  
 }
 
 #lightgallery  {
